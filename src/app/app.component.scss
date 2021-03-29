@@ -1,0 +1,19 @@
+//@import "../../../@theme/styles/themes";
+@import "Node_modules/@nebular/theme/styles/prebuilt/dark.scss";
+
+@include nb-install-component() {
+  //   .list-card {
+  //     nb-card-header {
+  //       border-bottom: none;
+  //     }
+
+  //     nb-card-body {
+  //       padding: 0;
+  //     }
+  //   }
+}
+
+.card {
+  border: 0px;
+  background: nb-theme(background-basic-color-3);
+}

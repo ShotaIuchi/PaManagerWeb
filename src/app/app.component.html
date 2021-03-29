@@ -3,9 +3,17 @@
     <a href="#" (click)="toggle()"><i class="nb-menu">aaaaa</i></a>
   </nb-layout-header>
 
-  <nb-sidebar><h1>aaa</h1></nb-sidebar>
+  <nb-sidebar>
+    <nb-card class="card">
+      <nb-menu [items]="items"> </nb-menu>
+    </nb-card>
+  </nb-sidebar>
 
-  <nb-layout-column class="colored-column-basic"
-    >Layout Content</nb-layout-column
-  >
+  <nb-layout-column class="colored-column-basic">
+    <span class="caption-2 text-hint">Work email address</span>
+    <span class="caption-2 text-hint">Work email address</span>
+    <p class="text-basic label">aiueo</p>
+    <button>aaaaa</button>
+    Layout Content
+  </nb-layout-column>
 </nb-layout>

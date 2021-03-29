@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { NbSidebarService } from "@nebular/theme";
+import { NbMenuItem, NbSidebarService } from "@nebular/theme";
 
 @Component({
   selector: "app-root",
@@ -8,6 +8,25 @@ import { NbSidebarService } from "@nebular/theme";
 })
 export class AppComponent {
   title = "PaManagerWeb";
+
+  items: NbMenuItem[] = [
+    {
+      title: "Profile",
+      icon: "person-outline",
+    },
+    {
+      title: "Change Password",
+      icon: "lock-outline",
+    },
+    {
+      title: "Privacy Policy",
+      icon: { icon: "checkmark-outline", pack: "eva" },
+    },
+    {
+      title: "Logout",
+      icon: "unlock-outline",
+    },
+  ];
 
   constructor(private sidebarService: NbSidebarService) {}
 

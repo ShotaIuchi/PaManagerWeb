@@ -4,7 +4,13 @@ import { BrowserModule } from "@angular/platform-browser";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { NbThemeModule, NbLayoutModule, NbSidebarModule } from "@nebular/theme";
+import {
+  NbThemeModule,
+  NbLayoutModule,
+  NbSidebarModule,
+  NbMenuModule,
+  NbCardModule,
+} from "@nebular/theme";
 import { NbEvaIconsModule } from "@nebular/eva-icons";
 
 import { ListModule } from "src/app/list/list.module";
@@ -17,6 +23,8 @@ import { ListModule } from "src/app/list/list.module";
     BrowserAnimationsModule,
     NbThemeModule.forRoot({ name: "default" }),
     NbSidebarModule.forRoot(),
+    NbMenuModule.forRoot(),
+    NbCardModule,
     NbLayoutModule,
     NbEvaIconsModule,
     ListModule,
